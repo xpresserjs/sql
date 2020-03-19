@@ -1,0 +1,7 @@
+{
+  "namespace": "@xpresser/objection",
+  "use_index": true,
+  "paths": {
+    "commands": "Commands"
+  }
+}

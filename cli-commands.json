@@ -1,0 +1,17 @@
+[
+  {
+    "command": "migrate",
+    "description": "Migrate database of current project.",
+    "file": "Migrate.js"
+  },
+  {
+    "command": "migrate:make <name>",
+    "description": "Generate new migration.",
+    "file": "MakeMigration.js"
+  },
+  {
+    "command": "migrate:rollback",
+    "description": "Rollback the last set of migrations.",
+    "file": "RollbackMigration.js"
+  }
+]
