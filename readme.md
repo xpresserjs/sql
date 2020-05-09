@@ -9,7 +9,7 @@ Add to your configuration using key `database`
   database: {
     startOnBoot: true,
     config: {
-        // knex databse connection here.
+        // knex database connection here.
     }
   }
 }
