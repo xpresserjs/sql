@@ -2,6 +2,18 @@
 
 For sql support using **knex** ORM library. (**objection**)
 
+### Setup
+1. Install `@xpresser/sql` in your project
+2. Add `npm://@xpresser/sql` to plugins array in your plugins.json file.
+
+Note: if you don't have a plugins.json file in your project create one in your **backend** folder.
+**backend/plugins.json**
+```json
+[
+  "npm://@xpresser/sql"
+]
+```
+
 ### Config
 Add to your configuration using key `database`
 ```javascript
@@ -41,9 +53,6 @@ const config = {
     })
 }
 ```
-
-### plugin.json
-Add `npm://@xpresser/sql` to plugins array in your plugins.json file.
 
 ### Cli commands
 For cli migration commands add to your `use-xjs-cli.json`
