@@ -9,9 +9,36 @@ Add to your configuration using key `database`
   database: {
     startOnBoot: true,
     config: {
-        // Knex configurations here.      
-    }   
+        // knex databse connection here.
+    }
   }
+}
+```
+
+To see all knex configurations check out [knex documentation](http://knexjs.org/)
+
+#### Sql Server Config
+Knex configuration for Sql Server
+```javascript
+const config = {
+    client: 'mysql',
+    connection: {
+        host : '127.0.0.1',
+        user : 'your_database_user',
+        password : 'your_database_password',
+        database : 'myapp_test'
+    }
+}
+```
+
+#### Sqlite Config
+Knex configuration for sqlite
+```javascript
+const config = {
+    client: 'sqlite3',
+    connection: () => ({
+        filename: '/path/to/database.sqlite'
+    })
 }
 ```
 
