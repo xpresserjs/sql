@@ -1,6 +1,6 @@
 {
   "name": "@xpresser/sql",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Sql plugin for xpresserjs",
   "main": "index.js",
   "repository": "https://github.com/xpresserjs/sql",
