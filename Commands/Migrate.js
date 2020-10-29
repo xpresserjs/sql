@@ -3,8 +3,8 @@ const PathHelper = require("xpresser/dist/src/Helpers/Path");
 
 
 module.exports = (args) => {
-    const $config = $.$config.get("database.config", {});
-    const env = $.$config.get("env", "development");
+    const $config = $.config.get("database.config", {});
+    const env = $.config.get("env", "development");
 
     if (!Object.keys($config).length) {
         return $.logErrorAndExit("Database config not found.");

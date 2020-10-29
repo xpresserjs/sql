@@ -9,7 +9,7 @@ module.exports = {
        * Set artisan factory settings
        */
       $.ifIsConsole(() => {
-          $.$config.set('artisan.factory.model', `${config.path}/Factory/model.hbs`);
+          $.config.set('artisan.factory.model', `${config.path}/Factory/model.hbs`);
       })
   }
 };
