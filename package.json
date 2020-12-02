@@ -8,11 +8,12 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
-    "xpresser": "^0.2.95"
+    "xpresser": "^0.3.28"
   },
   "dependencies": {
-    "abolish": "^0.0.20",
-    "knex": "^0.21.8",
+    "abolish": "^1.0.5",
+    "knex": "^0.21.12",
+    "lodash": "^4.17.20",
     "moment": "^2.29.1",
     "objection": "^2.2.3",
     "shelljs": "^0.8.4"

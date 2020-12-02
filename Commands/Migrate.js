@@ -1,8 +1,10 @@
 const {exec} = require("shelljs");
-const PathHelper = require("xpresser/dist/src/Helpers/Path");
 
 
 module.exports = (args) => {
+    const {getInstance} = require("xpresser");
+    const $ = getInstance();
+
     const $config = $.config.get("database.config", {});
     const env = $.config.get("env", "development");
 
@@ -22,7 +24,7 @@ module.exports = (args) => {
     const filePath = $.path.base("knexfile.js");
     const migrations = $.path.base("migrations");
 
-    PathHelper.makeDirIfNotExist(migrations);
+    $.file.makeDirIfNotExist(migrations);
 
     $.file.fs().writeFileSync(filePath, fileContent);
 
