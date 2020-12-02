@@ -13,7 +13,7 @@ module.exports = (args) => {
     }
 
     if ($config.migrations && !$config.migrations.stub) {
-        $config.migrations.stub = $.path.engine("Factory/migration.js");
+        $config.migrations.stub = $.path.resolve(__dirname + "/../Factory/migration.js", true);
     }
 
     const data = JSON.stringify({
